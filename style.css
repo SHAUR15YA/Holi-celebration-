@@ -1,0 +1,65 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://www.hdwallpapers.in/download/holi_is_a_perfect_time_to_celebrate_the_colours_of_our_beautiful_relationship_happy_holi_4k_hd_celebrations-3840x2160.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#holiText {
+    display: none;
+    color: linear-gradient(45deg, #ff4e50, #f9d423);
+    font-size: 48px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.5s ease;
+}
+
+#holiText.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+button {
+  padding: 15px 35px;
+  font-size: 20px;
+  border: none;
+  border-color: #f6d365;
+  border: 2px solid black;
+  border-radius: 12px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.95);
+  display: flex;
+}
+
+#corner-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
